@@ -1,0 +1,402 @@
+<!DOCTYPE html><!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10 ie9"> <![endif]-->
+<!--[if gt IE 9]>      <html class="no-js gt-ie9"> <![endif]-->
+<!--[if !IE] <![IGNORE[--><!--[IGNORE[]]--> <html class="no-js noie">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Zvara - Styleguide</title>
+  <meta name="author" content="Lighting Beetle s.r.o.">
+  <meta name="description" content="Light is SCSS/Jade foundation for living styleguides">
+  <meta name="keywords" content="Living Styleguide, Styleguide, SCSS, Jade">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <meta name="theme-color" content="#8e8e8e">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/fonts/libertation-serif/fonts.css">
+  <link rel="stylesheet" href="/fonticons/icomoon/style.css"><link rel="stylesheet" href="/styles/main-light-c9208cda61.min.css">
+  <script src="/scripts/modernizr-d3bfcf1626.min.js"></script>
+</head>
+<body data-spy="scroll" data-target=".js-scrollspy" data-offset='150' id="top">
+  <!-- offcanvas-->
+  <div data-role="offcanvas" class="l-offcanvas">
+    <!-- content main-->
+    <article id="top" class="l-content-main">
+      <!-- header-->
+      <header class="l-header-main"> 
+        <div class="l-header-main_controls"><a data-target="body" class="l-toggle-menu js-toggle"><span class="l-toggle-menu_line"></span><span class="l-toggle-menu_line"></span><span class="l-toggle-menu_line"></span></a></div>
+        <div class="l-wrap-main">
+          <h1 class="js-header"> <a href="#top" data-smoothscroll="#top">Buttons</a></h1>
+          <div id="header-navigation" class="js-scrollspy l-headnav">
+            <ul class="l-headnav_list nav">
+              <li class="l-headnav_item"><a href="#main-info" data-smoothscroll="#main-info" data-toggle-target="#header-navigation" data-toggle="dropdown" class="l-headnav_link js-toggle">Main info</a></li>
+              <li style="" class="l-headnav_item"><a href="#buttons" data-smoothscroll="#buttons" data-toggle-target="#header-navigation" data-toggle="dropdown" class="l-headnav_link js-toggle">Buttons</a></li>
+              <li style="" class="l-headnav_item"><a href="#icons" data-smoothscroll="#icons" data-toggle-target="#header-navigation" data-toggle="dropdown" class="l-headnav_link js-toggle">Icons in buttons</a></li>
+              <li style="" class="l-headnav_item"><a href="#layouts" data-smoothscroll="#layouts" data-toggle-target="#header-navigation" data-toggle="dropdown" class="l-headnav_link js-toggle">Layouts</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="l-content-main_inner">
+        <section id="main-info" class="l-main-info">
+          <div class="l-wrap-main">
+            <p class="l-big">Documentation of buttons and button variations including icons in buttons and responsive behavior of buttons. There are also explained button layouts, groups and bars and extended functionality for button as dropdown or split dropdown.
+            </p>
+            <div class="l-box-desc">
+              <p class="l-box-desc_headline">Files</p><code class="l-code">app/styles/modules/_buttons.scss</code><br/>
+            </div>
+          </div>
+        </section>
+        <aside class="l-nav-contents js-scrollspy">
+          <p class="l-nav-contents_headline">Contents</p>
+          <ul class="l-nav-contents_list nav">
+            <li style="" class="l-nav-contents_item"><a href="#buttons" data-smoothscroll="#buttons" class="l-nav-contents_link">Buttons</a></li>
+            <li style="" class="l-nav-contents_item"><a href="#icons" data-smoothscroll="#icons" class="l-nav-contents_link">Icons in buttons</a></li>
+            <li style="" class="l-nav-contents_item"><a href="#layouts" data-smoothscroll="#layouts" class="l-nav-contents_link">Layouts</a></li>
+          </ul>
+        </aside>
+        <section id="buttons">
+          <div class="l-wrap-main">
+            <h2 class="l-h2">Buttons
+            </h2>
+            <p class="l-p">Buttons can be created by using class <code class='l-code-inline'>.btn</code> on any element but it is recommended to use <code class='l-code-inline'>&lt;a&gt;</code>, <code class='l-code-inline'>&lt;button&gt;</code> or <code class='l-code-inline'>&lt;input&gt;</code>. 
+            </p>
+            <article class="l-demo">
+              <div class="l-demo_example">
+                <div class="l-demo_headbar"><span class="l-demo_headbar_title">Example:</span><a title="Show code" data-target="parent" data-parent-hop="3" class="js-toggle l-demo_headbar_control"><i class="icon icon-s">code</i></a>
+                </div>
+                <div class="btn-line btn-line-stack-xs"><a class="btn">Default</a>
+                  <button type="button" class="btn">Default</button>
+                  <input type="submit" value="Default" class="btn">
+                  <div class="btn">Default</div>
+                </div>
+              </div>
+              <div class="l-demo_code">
+                <div class="l-demo_headbar"><span class="l-demo_headbar_title">Code: </span></div>
+                <pre class="prettyprint"><code>&lt;a class=&quot;btn&quot;&gt;Button&lt;/a&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Button&lt;/button&gt;
+&lt;input value=&quot;Button&quot; class=&quot;btn&quot; type=&quot;submit&quot;&gt;
+&lt;div class=&quot;btn&quot;&gt;Button&lt;/div&gt;</code></pre>
+              </div>
+            </article>
+            <div class="l-sub-section">
+              <h3 class="l-h3">States
+              </h3>
+              <p class="l-p">There are four button states: normal, hover (shows on mousehover), active (onclick), disabled. 
+              </p>
+              <div class="l-box-desc l-box-warn">
+                <p class="l-box-desc_headline">Warning</p>
+                <p class="l-p">To disable button created with <code class='l-code-inline'>&lt;a&gt;</code> tag you have to use class <code class='l-code-inline'>.disabled</code>.
+                </p>
+              </div>
+              <article class="l-demo">
+                <div class="l-demo_example">
+                  <div class="l-demo_headbar"><span class="l-demo_headbar_title">Example:</span><a title="Show code" data-target="parent" data-parent-hop="3" class="js-toggle l-demo_headbar_control"><i class="icon icon-s">code</i></a>
+                  </div>
+                  <div class="btn-line btn-line-stack-xs">
+                    <button type="button" class="btn">Normal</button>
+                    <button type="button" class="btn active">Active</button>
+                    <button type="button" disabled class="btn">Disabled</button>
+                  </div>
+                </div>
+                <div class="l-demo_code">
+                  <div class="l-demo_headbar"><span class="l-demo_headbar_title">Code: </span></div>
+                  <pre class="prettyprint"><code>&lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Normal&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn active&quot;&gt;Active&lt;/button&gt;
+&lt;button type=&quot;button&quot; disabled=&quot;&quot; class=&quot;btn&quot;&gt;Disabled&lt;/button&gt;</code></pre>
+                </div>
+              </article>
+            </div>
+            <div class="l-sub-section">
+              <h3 class="l-h3">Expanding buttons
+              </h3>
+              <p class="l-p">Buttons can be expanded to full width when screen gets smaller by using classes <code class='l-code-inline'>.btn-full-[layout]</code>. Also buttons can be expanded for all screen sizes by using class <code class='l-code-inline'>.btn-full</code>.
+              </p>
+              <article class="l-demo">
+                <div class="l-demo_example">
+                  <div class="l-demo_headbar"><span class="l-demo_headbar_title">Example:</span><a title="Show code" data-target="parent" data-parent-hop="3" class="js-toggle l-demo_headbar_control"><i class="icon icon-s">code</i></a>
+                  </div>
+                  <div class="row">
+                    <div class="col col-l-6 col-s-12">
+                      <div class="btn-block">
+                        <button type="button" class="btn btn-full">Expanded</button>
+                        <button type="button" class="btn btn-full-l">L: Expand</button>
+                        <button type="button" class="btn btn-full-m">M: Expand</button>
+                        <button type="button" class="btn btn-full-s">S: Expand</button>
+                        <button type="button" class="btn btn-full-xs">XS: Expand   </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="l-demo_code">
+                  <div class="l-demo_headbar"><span class="l-demo_headbar_title">Code: </span></div>
+                  <pre class="prettyprint"><code>&lt;button type=&quot;button&quot; class=&quot;btn btn-full&quot;&gt;Expanded&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-full-l&quot;&gt;L: Expand&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-full-m&quot;&gt;M: Expand&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-full-s&quot;&gt;S: Expand&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-full-xs&quot;&gt;XS: Expand&lt;/button&gt;</code></pre>
+                </div>
+              </article>
+            </div>
+            <hr class="l-hr-section"/>
+          </div>
+        </section>
+        <section id="icons">
+          <div class="l-wrap-main">
+            <h2 class="l-h2">Icons in buttons
+            </h2>
+            <p class="l-p">Icons can be added to button by creating icon element same way as described in <a class='l-a' href='icons.html'>icons</a>. There are two ways how to use icons in buttons - they can be floating or positioned.
+            </p>
+            <div class="l-sub-section">
+              <h3 class="l-h3">Floating icons
+              </h3>
+              <p class="l-p">Floating icons can be moved to left or right side by adding classes like <code class='l-code-inline'>.icon-left</code> and <code class='l-code-inline'>.icon-right</code> on the icon element.
+              </p>
+              <article class="l-demo">
+                <div class="l-demo_example">
+                  <div class="l-demo_headbar"><span class="l-demo_headbar_title">Example:</span><a title="Show code" data-target="parent" data-parent-hop="3" class="js-toggle l-demo_headbar_control"><i class="icon icon-s">code</i></a>
+                  </div>
+                  <div class="row">
+                    <div class="col col-l-6">
+                      <h4>Small icon and text</h4>
+                      <div class="btn-line btn-line-stack-xs">
+                        <button type="button" class="btn"><i class="icon icon-s icon-left">download</i>Download</button>
+                        <button type="button" class="btn btn-primary">Settings<i class="icon icon-s icon-right">settings</i></button>
+                      </div>
+                    </div>
+                    <div class="col col-l-6">
+                      <h4>Medium icon and text</h4>
+                      <div class="btn-line btn-line-stack-xs">
+                        <button type="button" class="btn btn-primary"><i class="icon icon-m icon-left">download</i>Download</button>
+                        <button type="button" class="btn">Settings<i class="icon icon-m icon-right">settings</i></button>
+                      </div>
+                    </div>
+                    <div class="col col-l-6">
+                      <h4>Large button and small button</h4>
+                      <div class="btn-line btn-line-stack-xs">
+                        <button type="button" class="btn btn-small btn-primary"><i class="icon icon-s icon-left">download</i>Download</button>
+                        <button type="button" class="btn btn-large">Settings<i class="icon icon-m icon-right">settings</i></button>
+                      </div>
+                    </div>
+                    <div class="col col-l-6">
+                      <h4>Only icons</h4>
+                      <div class="btn-line btn-line-stack-xs">
+                        <button type="button" class="btn"><i class="icon icon-s">home</i></button>
+                        <button type="button" class="btn btn-primary"><i class="icon icon-m">facebook</i></button>
+                        <button type="button" class="btn btn-link"><i class="icon icon-m">edit</i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="l-demo_code">
+                  <div class="l-demo_headbar"><span class="l-demo_headbar_title">Code: </span></div>
+                  <pre class="prettyprint"><code>&lt;!-- small icon and text --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;
+  &lt;i class=&quot;icon icon-s icon-left&quot;&gt;download&lt;/i&gt; Download
+&lt;/button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt; Settings
+  &lt;i class=&quot;icon icon-s icon-right&quot;&gt;settings&lt;/i&gt;
+&lt;/button&gt;
+          
+&lt;!-- medium icon and text --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;
+  &lt;i class=&quot;icon icon-m icon-left&quot;&gt;download&lt;/i&gt; Download
+&lt;/button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt; Settings
+  &lt;i class=&quot;icon icon-m icon-right&quot;&gt;settings&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;!-- large and small button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-small&quot;&gt;
+  &lt;i class=&quot;icon icon-s icon-left&quot;&gt;download&lt;/i&gt; Download
+&lt;/button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-large&quot;&gt; Settings
+  &lt;i class=&quot;icon icon-m icon-right&quot;&gt;settings&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;!-- only icons --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;
+  &lt;i class=&quot;icon icon-s&quot;&gt;download&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;
+  &lt;i class=&quot;icon icon-m&quot;&gt;settings&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;
+  &lt;i class=&quot;icon icon-m&quot;&gt;edit&lt;/i&gt;
+&lt;/button&gt;</code></pre>
+                </div>
+              </article>
+            </div>
+            <div class="l-sub-section">
+              <h3 class="l-h3">Positioned icons
+              </h3>
+              <p class="l-p">Unlike floating icons, position of icons is set by using classes like <code class='l-code-inline'>.btn-icon-left</code> and <code class='l-code-inline'>.btn-icon-right</code> on button element.
+              </p>
+              <article class="l-demo">
+                <div class="l-demo_example">
+                  <div class="l-demo_headbar"><span class="l-demo_headbar_title">Example:</span><a title="Show code" data-target="parent" data-parent-hop="3" class="js-toggle l-demo_headbar_control"><i class="icon icon-s">code</i></a>
+                  </div>
+                  <div class="row">
+                    <div class="col col-l-4 col-m-5 col-xs-12">
+                      <button type="button" class="btn btn-full btn-icon-left"><i class="icon icon-s">chevronleft</i>Back</button>
+                    </div>
+                    <div class="col col-l-4 ofst-l-4 col-m-5 ofst-m-2 col-xs-12 ofst-xs-0 col-xs-space">
+                      <button type="button" class="btn btn-primary btn-full btn-icon-right">Next<i class="icon icon-s">chevronright</i></button>
+                    </div>
+                  </div>
+                  <div class="row row-space">
+                    <div class="col col-l-4 col-m-5 col-xs-12">
+                      <button type="button" class="btn btn-large btn-full btn-icon-left"><i class="icon">chevronleft</i>Back</button>
+                    </div>
+                    <div class="col col-l-4 ofst-l-4 col-m-5 ofst-m-2 col-xs-12 ofst-xs-0 col-xs-space">
+                      <button type="button" class="btn btn-small btn-primary btn-full btn-icon-right">Next<i class="icon icon-s">chevronright</i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="l-demo_code">
+                  <div class="l-demo_headbar"><span class="l-demo_headbar_title">Code: </span></div>
+                  <pre class="prettyprint"><code>&lt;button type=&quot;button&quot; class=&quot;btn btn-full btn-icon-left&quot;&gt;
+  &lt;i class=&quot;icon icon-s&quot;&gt;chevronleft&lt;/i&gt; Back
+&lt;/button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-full btn-icon-right&quot;&gt; Next
+  &lt;i class=&quot;icon icon-s&quot;&gt;chevronright&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-large btn-full btn-icon-left&quot;&gt;
+  &lt;i class=&quot;icon&quot;&gt;chevronleft&lt;/i&gt; Back
+&lt;/button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-small btn-primary btn-full btn-icon-right&quot;&gt; Next
+  &lt;i class=&quot;icon icon-s&quot;&gt;chevronright&lt;/i&gt;
+&lt;/button&gt;</code></pre>
+                </div>
+              </article>
+            </div>
+            <hr class="l-hr-section"/>
+          </div>
+        </section>
+        <section id="layouts">
+          <div class="l-wrap-main">
+            <h2 class="l-h2">Layouts
+            </h2>
+            <p class="l-p">There are two main button layouts that can be used: block and inline. Inline layout can be also combined with block layout.
+            </p>
+            <div class="l-sub-section">
+              <h3 class="l-h3">Button line
+              </h3>
+              <p class="l-p">Line of buttons can be created by wrapping buttons into element with class <code class='l-code-inline'>.btn-line</code>. Buttons can then stack verticaly for small screens by using classes like <code class='l-code-inline'>.btn-line-stack-[layout]</code>.
+              </p>
+              <article class="l-demo">
+                <div class="l-demo_example">
+                  <div class="l-demo_headbar"><span class="l-demo_headbar_title">Example:</span><a title="Show code" data-target="parent" data-parent-hop="3" class="js-toggle l-demo_headbar_control"><i class="icon icon-s">code</i></a>
+                  </div>
+                  <p>Buttons will stack verticaly for extra small screens.</p>
+                  <div class="btn-line btn-line-stack-xs"> 
+                    <button type="button" class="btn">Button</button>
+                    <button type="button" class="btn">Button</button>
+                    <button type="button" class="btn">Button</button>
+                  </div>
+                </div>
+                <div class="l-demo_code">
+                  <div class="l-demo_headbar"><span class="l-demo_headbar_title">Code: </span></div>
+                  <pre class="prettyprint"><code>&lt;div class=&quot;btn-line btn-line-stack-xs&quot;&gt; 
+  &lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Button&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Button&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Button&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </article>
+            </div>
+            <div class="l-sub-section">
+              <h3 class="l-h3">Button block
+              </h3>
+              <p class="l-p">Block of buttons can be created by wrapping buttons into element with class <code class='l-code-inline'>.btn-block</code>. There can be also created blocks of button lines same way.
+              </p>
+              <article class="l-demo">
+                <div class="l-demo_example">
+                  <div class="l-demo_headbar"><span class="l-demo_headbar_title">Example:</span><a title="Show code" data-target="parent" data-parent-hop="3" class="js-toggle l-demo_headbar_control"><i class="icon icon-s">code</i></a>
+                  </div>
+                  <div class="btn-block"> 
+                    <button type="button" class="btn">Button</button>
+                    <button type="button" class="btn">Button</button>
+                    <div class="btn-line btn-line-stack-xs"> 
+                      <button type="button" class="btn btn-primary">Button</button>
+                      <button type="button" class="btn btn-primary">Button</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="l-demo_code">
+                  <div class="l-demo_headbar"><span class="l-demo_headbar_title">Code: </span></div>
+                  <pre class="prettyprint"><code>&lt;div class=&quot;btn-block&quot;&gt; 
+  &lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Button&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Button&lt;/button&gt;
+  &lt;div class=&quot;btn-line btn-line-stack-xs&quot;&gt; 
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Button&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Button&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </article>
+    <aside class="l-wrap-navs">
+      <!-- navigation main-->
+      <nav data-role="dropdown" class="l-nav-main"><a href="/" class="l-nav-main_headline">Zvara - Styleguide</a>
+        <ul data-role="sidebar" class="l-nav-main_list js-scrollbar"> 
+          <li class="l-nav-main_list_item"><a data-target="next" class="l-nav-main_link js-toggle">Introduction<i class="icon">caretright</i></a>
+            <ul class="l-nav-main_list-sub">
+              <li class="l-nav-main_list-sub_item"><a href="index.html" class="l-nav-main-sub_link">Get started</a>
+              </li>
+            </ul>
+          </li>
+          <li class="l-nav-main_list_item"><a data-target="next" class="l-nav-main_link js-toggle">Design<i class="icon">caretright</i></a>
+            <ul class="l-nav-main_list-sub">
+              <li class="l-nav-main_list-sub_item"><a href="color-palette.html" class="l-nav-main-sub_link">Color Palette</a>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a href="typography.html" class="l-nav-main-sub_link">Typography</a>
+              </li>
+            </ul>
+          </li>
+          <li class="l-nav-main_list_item"><a data-target="next" class="l-nav-main_link js-toggle active selected">Components<i class="icon">caretright</i></a>
+            <ul class="l-nav-main_list-sub active">
+              <li class="l-nav-main_list-sub_item"><a href="icons.html" class="l-nav-main-sub_link">Icons / Images / Badges</a>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a href="grid.html" class="l-nav-main-sub_link">Grid</a>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a href="buttons.html" class="l-nav-main-sub_link selected">Buttons</a>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a data-target="next" class="l-nav-main-sub_link js-toggle">Form components<i class="icon js-icon">add</i></a>
+                <ul class="l-nav-main_list-sub2">
+                  <li class="l-nav-main_list-sub2_item"><a href="forms-basic.html" class="l-nav-main-sub2_link">- Basic</a></li>
+                  <li class="l-nav-main_list-sub2_item"><a href="forms-labels.html" class="l-nav-main-sub2_link">- Labels</a></li>
+                  <li class="l-nav-main_list-sub2_item"><a href="forms-layouts.html" class="l-nav-main-sub2_link">- Layouts</a></li>
+                </ul>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a href="tables.html" class="l-nav-main-sub_link">Tables</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- end: navigation main-->
+    </aside>
+    <!-- end: content main  -->
+  </div>
+  <!-- end: offcanvas-->
+  <script src="/scripts/vendor-light-6c32947f58.min.js"></script>
+  <script src="/scripts/light-30e091b4dc.min.js"></script>
+  <script src="/scripts/plugins-light-33be68977d.min.js"></script>
+  <script src="/scripts/main-light-5f3789ed70.min.js"></script>
+</body></html>

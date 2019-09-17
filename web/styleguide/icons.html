@@ -1,0 +1,295 @@
+<!DOCTYPE html><!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10 ie9"> <![endif]-->
+<!--[if gt IE 9]>      <html class="no-js gt-ie9"> <![endif]-->
+<!--[if !IE] <![IGNORE[--><!--[IGNORE[]]--> <html class="no-js noie">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Zvara - Styleguide</title>
+  <meta name="author" content="Lighting Beetle s.r.o.">
+  <meta name="description" content="Light is SCSS/Jade foundation for living styleguides">
+  <meta name="keywords" content="Living Styleguide, Styleguide, SCSS, Jade">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <meta name="theme-color" content="#8e8e8e">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/fonts/libertation-serif/fonts.css">
+  <link rel="stylesheet" href="/fonticons/icomoon/style.css"><link rel="stylesheet" href="/styles/main-light-c9208cda61.min.css">
+  <script src="/scripts/modernizr-d3bfcf1626.min.js"></script>
+</head>
+<body data-spy="scroll" data-target=".js-scrollspy" data-offset='150' id="top">
+  <!-- offcanvas-->
+  <div data-role="offcanvas" class="l-offcanvas">
+    <!-- content main-->
+    <article id="top" class="l-content-main">
+      <!-- header-->
+      <header class="l-header-main"> 
+        <div class="l-header-main_controls"><a data-target="body" class="l-toggle-menu js-toggle"><span class="l-toggle-menu_line"></span><span class="l-toggle-menu_line"></span><span class="l-toggle-menu_line"></span></a></div>
+        <div class="l-wrap-main">
+          <h1 class="js-header"> <a href="#top" data-smoothscroll="#top">Icons / Images / Badges</a></h1>
+          <div id="header-navigation" class="js-scrollspy l-headnav">
+            <ul class="l-headnav_list nav">
+              <li class="l-headnav_item"><a href="#main-info" data-smoothscroll="#main-info" data-toggle-target="#header-navigation" data-toggle="dropdown" class="l-headnav_link js-toggle">Main info</a></li>
+              <li style="" class="l-headnav_item"><a href="#icons" data-smoothscroll="#icons" data-toggle-target="#header-navigation" data-toggle="dropdown" class="l-headnav_link js-toggle">Icons</a></li>
+              <li style="" class="l-headnav_item"><a href="#image-utilities" data-smoothscroll="#image-utilities" data-toggle-target="#header-navigation" data-toggle="dropdown" class="l-headnav_link js-toggle">Image utilities</a></li>
+              <li style="" class="l-headnav_item"><a href="#badges" data-smoothscroll="#badges" data-toggle-target="#header-navigation" data-toggle="dropdown" class="l-headnav_link js-toggle">Badges</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="l-content-main_inner">
+        <section id="main-info" class="l-main-info">
+          <div class="l-wrap-main">
+            <p class="l-big">Documentation of icons, image utilities and badge components.
+            </p>
+            <div class="l-box-desc">
+              <p class="l-box-desc_headline">Files</p><code class="l-code">app/styles/modules/_icons_images.scss</code><br/>
+            </div>
+          </div>
+        </section>
+        <aside class="l-nav-contents js-scrollspy">
+          <p class="l-nav-contents_headline">Contents</p>
+          <ul class="l-nav-contents_list nav">
+            <li style="" class="l-nav-contents_item"><a href="#icons" data-smoothscroll="#icons" class="l-nav-contents_link">Icons</a></li>
+            <li style="" class="l-nav-contents_item"><a href="#image-utilities" data-smoothscroll="#image-utilities" class="l-nav-contents_link">Image utilities</a></li>
+            <li style="" class="l-nav-contents_item"><a href="#badges" data-smoothscroll="#badges" class="l-nav-contents_link">Badges</a></li>
+          </ul>
+        </aside>
+        <section id="icons">
+          <div class="l-wrap-main">
+            <h2 class="l-h2">Icons
+            </h2>
+            <p class="l-p">Here is preview of icon set used in this project. An icon can be created by using class <code class='l-code-inline'>.icon</code> on <code class='l-code-inline'>&lt;i&gt;</code> element and coresponding ligature inside the tags. Ligatures for icons can be found under icons in preview
+            </p>
+            <div class="l-box-desc l-box-warn">
+              <p class="l-box-desc_headline">Warning</p>
+              <p class="l-p">Do not forget to configure preferences for icomoon font: check include metadata in fonts, check encode &amp; embed font in CSS
+              </p>
+            </div>
+            <div class="l-box-desc l-box-warn">
+              <p class="l-box-desc_headline"> dependency</p>
+              <p class="l-p">
+                 
+                Icomoon icons require to link <code class='l-code-inline'>app/fonticons/icomoon/style.css</code> file in <code class='l-code-inline'>&lt;head&gt;</code>. <br>All files required for icomoon can be found in folder <code class='l-code-inline'>app/fonticons/icomoon/</code><br>For more specific documentation check <a class='l-a' href='https://icomoon.io/', target='_blank'>icomoon</a>.
+              </p>
+            </div>
+            <article class="l-demo">
+              <div class="l-demo_example">
+                <div class="l-demo_headbar"><span class="l-demo_headbar_title">Example:</span><a title="Show code" data-target="parent" data-parent-hop="3" class="js-toggle l-demo_headbar_control"><i class="icon icon-s">code</i></a>
+                </div>
+                <ul class="l-icons">
+                  <li class="l-icons_item"><i class="icon icon-l">caretdown</i><br><abbr title="caretdown" class="text-color-semiblack">caretdown</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">caretright</i><br><abbr title="caretright" class="text-color-semiblack">caretright</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">caretleft</i><br><abbr title="caretleft" class="text-color-semiblack">caretleft</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">twitter</i><br><abbr title="twitter" class="text-color-semiblack">twitter</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">facebook</i><br><abbr title="facebook" class="text-color-semiblack">facebook</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">linkedin</i><br><abbr title="linkedin" class="text-color-semiblack">linkedin</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">youtube</i><br><abbr title="youtube" class="text-color-semiblack">youtube</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">add</i><br><abbr title="add" class="text-color-semiblack">add</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">time</i><br><abbr title="time" class="text-color-semiblack">time</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">attach</i><br><abbr title="attach" class="text-color-semiblack">attach</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">download</i><br><abbr title="download" class="text-color-semiblack">download</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">upload</i><br><abbr title="upload" class="text-color-semiblack">upload</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">chevrondown</i><br><abbr title="chevrondown" class="text-color-semiblack">chevrondown</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">chevronleft</i><br><abbr title="chevronleft" class="text-color-semiblack">chevronleft</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">chevronright</i><br><abbr title="chevronright" class="text-color-semiblack">chevronright</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">chevronup</i><br><abbr title="chevronup" class="text-color-semiblack">chevronup</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">edit</i><br><abbr title="edit" class="text-color-semiblack">edit</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">check</i><br><abbr title="check" class="text-color-semiblack">check</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">close</i><br><abbr title="close" class="text-color-semiblack">close</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">ellipsis</i><br><abbr title="ellipsis" class="text-color-semiblack">ellipsis</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">refresh</i><br><abbr title="refresh" class="text-color-semiblack">refresh</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">calendar</i><br><abbr title="calendar" class="text-color-semiblack">calendar</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">user</i><br><abbr title="user" class="text-color-semiblack">user</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">doc</i><br><abbr title="doc" class="text-color-semiblack">doc</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">home</i><br><abbr title="home" class="text-color-semiblack">home</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">search</i><br><abbr title="search" class="text-color-semiblack">search</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">settings</i><br><abbr title="settings" class="text-color-semiblack">settings</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">arrowup</i><br><abbr title="arrowup" class="text-color-semiblack">arrowup</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">arrowright</i><br><abbr title="arrowright" class="text-color-semiblack">arrowright</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">arrowdown</i><br><abbr title="arrowdown" class="text-color-semiblack">arrowdown</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">arrowleft</i><br><abbr title="arrowleft" class="text-color-semiblack">arrowleft</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">arrowcircleup</i><br><abbr title="arrowcircleup" class="text-color-semiblack">arrowcircleup</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">arrowcircleright</i><br><abbr title="arrowcircleright" class="text-color-semiblack">arrowcircleright</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">arrowcircledown</i><br><abbr title="arrowcircledown" class="text-color-semiblack">arrowcircledown</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">arrowcircleleft</i><br><abbr title="arrowcircleleft" class="text-color-semiblack">arrowcircleleft</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">googleplus</i><br><abbr title="googleplus" class="text-color-semiblack">googleplus</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">eye</i><br><abbr title="eye" class="text-color-semiblack">eye</abbr></li>
+                  <li class="l-icons_item"><i class="icon icon-l">code</i><br><abbr title="code" class="text-color-semiblack">code</abbr></li>
+                </ul>
+              </div>
+              <div class="l-demo_code">
+                <div class="l-demo_headbar"><span class="l-demo_headbar_title">Code: </span></div>
+                <pre class="prettyprint"><code>&lt;ul&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;home&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;edit&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;calendar&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;user&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;settings&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;download&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;close&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;check&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;arrowup&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;arrowright&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;arrowdown&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;arrowleft&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;arrowcircleup&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;arrowcircleright&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;arrowcircledown&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;arrowcircleleft&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;googleplus&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;facebook&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;twitter&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;youtube&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;linkedin&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;chevronleft&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;chevronright&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;chevronup&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;chevrondown&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </div>
+            </article>
+            <div class="l-sub-section">
+              <h3 class="l-h3">Sizes
+              </h3>
+              <p class="l-p">There are fours sizes for iconsL XL, L, M, S. Size for icon can be specified with class <code class='l-code-inline'>.icon-[xl/l/m/s]</code> on icon element. 
+              </p>
+              <div class="l-box-desc l-box-note">
+                <p class="l-box-desc_headline">Note</p>
+                <p class="l-p">In case there is no class for size, icon will inherit size from parent font-size property. 
+                </p>
+              </div>
+              <article class="l-demo">
+                <div class="l-demo_example">
+                  <div class="l-demo_headbar"><span class="l-demo_headbar_title">Example:</span><a title="Show code" data-target="parent" data-parent-hop="3" class="js-toggle l-demo_headbar_control"><i class="icon icon-s">code</i></a>
+                  </div>
+                  <ul class="l-icons">
+                    <li class="l-icons_item"><i class="icon icon-xl">home</i><br><abbr title="Icon XL" class="text-color-semiblack">XL</abbr></li>
+                    <li class="l-icons_item"><i class="icon icon-l">home</i><br><abbr title="Icon L" class="text-color-semiblack">L</abbr></li>
+                    <li class="l-icons_item"><i class="icon icon-m">home</i><br><abbr title="Icon M" class="text-color-semiblack">M</abbr></li>
+                    <li class="l-icons_item"><i class="icon icon-s">home</i><br><abbr title="Icon S" class="text-color-semiblack">S</abbr></li>
+                  </ul>
+                </div>
+                <div class="l-demo_code">
+                  <div class="l-demo_headbar"><span class="l-demo_headbar_title">Code: </span></div>
+                  <pre class="prettyprint"><code>&lt;ul&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-xl&quot;&gt;home&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l&quot;&gt;home&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-m&quot;&gt;home&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-s&quot;&gt;home&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+              </article>
+            </div>
+            <div class="l-sub-section">
+              <h3 class="l-h3">Colors
+              </h3>
+              <p class="l-p">Icons use same <a class='l-a' href='/typography.html#utilities'>text color</a> priciple for colors as typography. 
+              </p>
+              <div class="l-box-desc l-box-note">
+                <p class="l-box-desc_headline">Note</p>
+                <p class="l-p">In case there is no class for color, icon will inherit color from parent color property.
+                </p>
+              </div>
+              <article class="l-demo">
+                <div class="l-demo_example">
+                  <div class="l-demo_headbar"><span class="l-demo_headbar_title">Example:</span><a title="Show code" data-target="parent" data-parent-hop="3" class="js-toggle l-demo_headbar_control"><i class="icon icon-s">code</i></a>
+                  </div>
+                  <ul class="l-icons">
+                    <li class="l-icons_item"><i class="icon icon-l text-color-orange">home</i></li>
+                    <li class="l-icons_item"><i class="icon icon-l text-color-orange-100">home</i></li>
+                    <li class="l-icons_item"><i class="icon icon-l text-color-semiblack">home</i></li>
+                    <li class="l-icons_item"><i class="icon icon-l text-color-error">home</i></li>
+                  </ul>
+                </div>
+                <div class="l-demo_code">
+                  <div class="l-demo_headbar"><span class="l-demo_headbar_title">Code: </span></div>
+                  <pre class="prettyprint"><code>&lt;ul&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l text-color-orange&quot;&gt;home&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l text-color-orange-100&quot;&gt;home&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l text-color-semiblack&quot;&gt;home&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon icon-l text-color-error&quot;&gt;home&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+              </article>
+            </div>
+            <hr class="l-hr-section"/>
+          </div>
+        </section>
+        <section id="image-utilities">
+          <div class="l-wrap-main">
+            <h2 class="l-h2">Image utilities
+            </h2>
+            <p class="l-p">There are three basic image utilities: fluid, rounded and circle. Fluid utility gives image ability to change size coresponding to its parent. Circle and rounded utilities provides specific shapes for images.
+            </p>
+            <article class="l-demo">
+              <div class="l-demo_example">
+                <div class="l-demo_headbar"><span class="l-demo_headbar_title">Example:</span><a title="Show code" data-target="parent" data-parent-hop="3" class="js-toggle l-demo_headbar_control"><i class="icon icon-s">code</i></a>
+                </div>
+                <figure class="l-image"><img src="/images/300x300.gif" alt="placeholder" class="img-fluid"></figure>
+                <figure class="l-image"><img src="/images/150x150.gif" alt="placeholder" class="img-rounded"></figure>
+                <figure class="l-image"><img src="/images/150x150.gif" alt="placeholder" class="img-circle"></figure>
+              </div>
+              <div class="l-demo_code">
+                <div class="l-demo_headbar"><span class="l-demo_headbar_title">Code: </span></div>
+                <pre class="prettyprint"><code>&lt;img src=&quot;...&quot; class=&quot;img-fluid&quot;&gt;
+&lt;img src=&quot;...&quot; class=&quot;img-rounded&quot;&gt;
+&lt;img src=&quot;...&quot; class=&quot;img-circle&quot;&gt;</code></pre>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </article>
+    <aside class="l-wrap-navs">
+      <!-- navigation main-->
+      <nav data-role="dropdown" class="l-nav-main"><a href="/" class="l-nav-main_headline">Zvara - Styleguide</a>
+        <ul data-role="sidebar" class="l-nav-main_list js-scrollbar"> 
+          <li class="l-nav-main_list_item"><a data-target="next" class="l-nav-main_link js-toggle">Introduction<i class="icon">caretright</i></a>
+            <ul class="l-nav-main_list-sub">
+              <li class="l-nav-main_list-sub_item"><a href="index.html" class="l-nav-main-sub_link">Get started</a>
+              </li>
+            </ul>
+          </li>
+          <li class="l-nav-main_list_item"><a data-target="next" class="l-nav-main_link js-toggle">Design<i class="icon">caretright</i></a>
+            <ul class="l-nav-main_list-sub">
+              <li class="l-nav-main_list-sub_item"><a href="color-palette.html" class="l-nav-main-sub_link">Color Palette</a>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a href="typography.html" class="l-nav-main-sub_link">Typography</a>
+              </li>
+            </ul>
+          </li>
+          <li class="l-nav-main_list_item"><a data-target="next" class="l-nav-main_link js-toggle active selected">Components<i class="icon">caretright</i></a>
+            <ul class="l-nav-main_list-sub active">
+              <li class="l-nav-main_list-sub_item"><a href="icons.html" class="l-nav-main-sub_link selected">Icons / Images / Badges</a>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a href="grid.html" class="l-nav-main-sub_link">Grid</a>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a href="buttons.html" class="l-nav-main-sub_link">Buttons</a>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a data-target="next" class="l-nav-main-sub_link js-toggle">Form components<i class="icon js-icon">add</i></a>
+                <ul class="l-nav-main_list-sub2">
+                  <li class="l-nav-main_list-sub2_item"><a href="forms-basic.html" class="l-nav-main-sub2_link">- Basic</a></li>
+                  <li class="l-nav-main_list-sub2_item"><a href="forms-labels.html" class="l-nav-main-sub2_link">- Labels</a></li>
+                  <li class="l-nav-main_list-sub2_item"><a href="forms-layouts.html" class="l-nav-main-sub2_link">- Layouts</a></li>
+                </ul>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a href="tables.html" class="l-nav-main-sub_link">Tables</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- end: navigation main-->
+    </aside>
+    <!-- end: content main  -->
+  </div>
+  <!-- end: offcanvas-->
+  <script src="/scripts/vendor-light-6c32947f58.min.js"></script>
+  <script src="/scripts/light-30e091b4dc.min.js"></script>
+  <script src="/scripts/plugins-light-33be68977d.min.js"></script>
+  <script src="/scripts/main-light-5f3789ed70.min.js"></script>
+</body></html>

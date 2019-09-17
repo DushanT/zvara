@@ -1,0 +1,666 @@
+<!DOCTYPE html><!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10 ie9"> <![endif]-->
+<!--[if gt IE 9]>      <html class="no-js gt-ie9"> <![endif]-->
+<!--[if !IE] <![IGNORE[--><!--[IGNORE[]]--> <html class="no-js noie">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Zvara - Styleguide</title>
+  <meta name="author" content="Lighting Beetle s.r.o.">
+  <meta name="description" content="Light is SCSS/Jade foundation for living styleguides">
+  <meta name="keywords" content="Living Styleguide, Styleguide, SCSS, Jade">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <meta name="theme-color" content="#8e8e8e">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/fonts/libertation-serif/fonts.css">
+  <link rel="stylesheet" href="/fonticons/icomoon/style.css"><link rel="stylesheet" href="/styles/main-light-c9208cda61.min.css">
+  <script src="/scripts/modernizr-d3bfcf1626.min.js"></script>
+</head>
+<body data-spy="scroll" data-target=".js-scrollspy" data-offset='150' id="top">
+  <!-- offcanvas-->
+  <div data-role="offcanvas" class="l-offcanvas">
+    <!-- content main-->
+    <article id="top" class="l-content-main">
+      <!-- header-->
+      <header class="l-header-main"> 
+        <div class="l-header-main_controls"><a data-target="body" class="l-toggle-menu js-toggle"><span class="l-toggle-menu_line"></span><span class="l-toggle-menu_line"></span><span class="l-toggle-menu_line"></span></a></div>
+        <div class="l-wrap-main">
+          <h1 class="js-header"> <a href="#top" data-smoothscroll="#top">Labels</a></h1>
+          <div id="header-navigation" class="js-scrollspy l-headnav">
+            <ul class="l-headnav_list nav">
+              <li class="l-headnav_item"><a href="#main-info" data-smoothscroll="#main-info" data-toggle-target="#header-navigation" data-toggle="dropdown" class="l-headnav_link js-toggle">Main info</a></li>
+              <li style="" class="l-headnav_item"><a href="#labels" data-smoothscroll="#labels" data-toggle-target="#header-navigation" data-toggle="dropdown" class="l-headnav_link js-toggle">Labels</a></li>
+              <li style="" class="l-headnav_item"><a href="#help" data-smoothscroll="#help" data-toggle-target="#header-navigation" data-toggle="dropdown" class="l-headnav_link js-toggle">Form help</a></li>
+              <li style="" class="l-headnav_item"><a href="#error" data-smoothscroll="#error" data-toggle-target="#header-navigation" data-toggle="dropdown" class="l-headnav_link js-toggle">Form error</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="l-content-main_inner">
+        <section id="main-info" class="l-main-info">
+          <div class="l-wrap-main">
+            <p class="l-big">Documentation of labels, help and error texts in forms.
+            </p>
+            <div class="l-box-desc">
+              <p class="l-box-desc_headline">Files</p><code class="l-code">app/styles/modules/_forms.scss</code><br/>
+            </div>
+          </div>
+        </section>
+        <aside class="l-nav-contents js-scrollspy">
+          <p class="l-nav-contents_headline">Contents</p>
+          <ul class="l-nav-contents_list nav">
+            <li style="" class="l-nav-contents_item"><a href="#labels" data-smoothscroll="#labels" class="l-nav-contents_link">Labels</a></li>
+            <li style="" class="l-nav-contents_item"><a href="#help" data-smoothscroll="#help" class="l-nav-contents_link">Form help</a></li>
+            <li style="" class="l-nav-contents_item"><a href="#error" data-smoothscroll="#error" class="l-nav-contents_link">Form error</a></li>
+          </ul>
+        </aside>
+        <section id="labels">
+          <div class="l-wrap-main">
+            <h2 class="l-h2">Labels
+            </h2>
+            <p class="l-p">Form labels can be created by wrapping <code class='l-code-inline'>&lt;label&gt;</code> into element with class <code class='l-code-inline'>.form-label</code>. Form label can be also placed beside inputs or stack as shown in form <a href='form-layouts.html' class='l-a'>layouts</a>.
+            </p>
+            <article class="l-demo">
+              <div class="l-demo_example">
+                <div class="l-demo_headbar"><span class="l-demo_headbar_title">Example:</span><a title="Show code" data-target="parent" data-parent-hop="3" class="js-toggle l-demo_headbar_control"><i class="icon icon-s">code</i></a>
+                </div>
+                <div class="row">
+                  <div class="col col-l-6 col-s-12">
+                    <div class="row form-row">
+                      <div class="form-label col">
+                        <label for="input-01">Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="form-control">
+                          <input type="text" placeholder="Input" id="input-01" class="input">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-l-6 col-s-12">
+                    <div class="row form-row">
+                      <div class="form-label col">
+                        <label for="textarea-01">Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="form-control">
+                          <textarea type="text" placeholder="Textarea" id="textarea-01" class="input"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-l-6 col-s-12">
+                    <div class="row form-row">
+                      <div class="form-label col">
+                        <label>Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="checkbox">
+                          <input type="checkbox" id="checkbox-withlabel" name="checkbox-withlabel" class="checkbox-input">
+                          <label for="checkbox-withlabel" class="checkbox-custom"></label>
+                          <label for="checkbox-withlabel" class="checkbox-label">Checkbox</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-l-6 col-s-12">
+                    <div class="row form-row">
+                      <div class="form-label col">
+                        <label>Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="radio-group">
+                          <div class="radio">
+                            <input type="radio" id="radio-group-withlabel-01" name="radio-group-withlabel" class="radio-input">
+                            <label for="radio-group-withlabel-01" class="radio-custom"></label>
+                            <label for="radio-group-withlabel-01" class="radio-label">Radio 1</label>
+                          </div>
+                          <div class="radio">
+                            <input type="radio" id="radio-group-withlabel-02" name="radio-group-withlabel" class="radio-input">
+                            <label for="radio-group-withlabel-02" class="radio-custom"></label>
+                            <label for="radio-group-withlabel-02" class="radio-label">Radio 2</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-l-6 col-s-12">
+                    <div class="row form-row">
+                      <div class="form-label col">
+                        <label>Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="form-control">
+                          <select class="js-select">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                            <option>Option 5</option>
+                            <option>Option 6</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="l-demo_code">
+                <div class="l-demo_headbar"><span class="l-demo_headbar_title">Code: </span></div>
+                <pre class="prettyprint"><code>&lt;!-- input --&gt;
+&lt;div class=&quot;row form-row&quot;&gt;
+  &lt;div class=&quot;form-label col&quot;&gt;
+    &lt;label for=&quot;...&quot;&gt;Form label:&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-controls col&quot;&gt;
+    &lt;div class=&quot;form-control&quot;&gt;
+      &lt;input placeholder=&quot;Input&quot; id=&quot;...&quot; class=&quot;input&quot; type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- textarea --&gt;
+&lt;div class=&quot;row form-row&quot;&gt;
+  &lt;div class=&quot;form-label col&quot;&gt;
+    &lt;label for=&quot;...&quot;&gt;Form label:&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-controls col&quot;&gt;
+    &lt;div class=&quot;form-control&quot;&gt;
+      &lt;textarea placeholder=&quot;...&quot; id=&quot;...&quot; class=&quot;input&quot;&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- checkbox --&gt;
+&lt;div class=&quot;row form-row&quot;&gt;
+  &lt;div class=&quot;form-label col&quot;&gt;
+    &lt;label&gt;Form label:&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-controls col&quot;&gt;
+    &lt;div class=&quot;checkbox&quot;&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- radiogroup --&gt;
+&lt;div class=&quot;row form-row&quot;&gt;
+  &lt;div class=&quot;form-label col&quot;&gt;
+    &lt;label&gt;Form label:&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-controls col&quot;&gt;
+    &lt;div class=&quot;radio-group&quot;&gt;
+      &lt;div class=&quot;radio&quot;&gt;
+        ...
+      &lt;/div&gt;
+      &lt;div class=&quot;radio&quot;&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- select --&gt;
+&lt;div class=&quot;row form-row&quot;&gt;
+  &lt;div class=&quot;form-label col&quot;&gt;
+    &lt;label&gt;Form label:&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-controls col&quot;&gt;
+    &lt;div class=&quot;form-control&quot;&gt;
+      &lt;select style=&quot;display: none;&quot; class=&quot;js-select&quot;&gt;
+        ...
+      &lt;/select&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </article>
+            <div class="l-sub-section">
+              <h3 class="l-h3">Form label states
+              </h3>
+              <p class="l-p">Form labels can have two state: default and error state. Error state can be set by using class <code class='l-code-inline'>.error</code> on <code class='l-code-inline'>.form-label</code> element.
+              </p>
+              <article class="l-demo">
+                <div class="l-demo_example">
+                  <div class="l-demo_headbar"><span class="l-demo_headbar_title">Example:</span><a title="Show code" data-target="parent" data-parent-hop="3" class="js-toggle l-demo_headbar_control"><i class="icon icon-s">code</i></a>
+                  </div>
+                  <div class="row">
+                    <div class="col col-l-6 col-s-12">
+                      <div class="row form-row">
+                        <div class="form-label col">
+                          <label for="input-fls-01">Form label:</label>
+                        </div>
+                        <div class="form-controls col">
+                          <div class="form-control">
+                            <input type="text" placeholder="Input" id="input-fls-01" class="input">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-l-6 col-s-12">
+                      <div class="row form-row">
+                        <div class="form-label error col">
+                          <label for="textarea-fls-02">Form label error:</label>
+                        </div>
+                        <div class="form-controls col">
+                          <div class="form-control">
+                            <input type="text" placeholder="Input" id="input-fls-02" class="input error">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="l-demo_code">
+                  <div class="l-demo_headbar"><span class="l-demo_headbar_title">Code: </span></div>
+                  <pre class="prettyprint"><code>&lt;!-- default --&gt;
+...
+  &lt;div class=&quot;form-label col&quot;&gt;
+    &lt;label for=&quot;...&quot;&gt;Form label:&lt;/label&gt;
+  &lt;/div&gt;
+...
+
+&lt;!-- error --&gt;
+...
+  &lt;div class=&quot;form-label error col&quot;&gt;
+    &lt;label for=&quot;...&quot;&gt;Form label:&lt;/label&gt;
+  &lt;/div&gt;
+...</code></pre>
+                </div>
+              </article>
+            </div>
+            <hr class="l-hr-section"/>
+          </div>
+        </section>
+        <section id="help">
+          <div class="l-wrap-main">
+            <h2 class="l-h2">Form help
+            </h2>
+            <p class="l-p">In case you need to show additional help text for form components you can use form help component. Help text will be then shown under form component. To create form help component you can use <code class='l-code-inline'>&lt;label&gt;</code> tag with class <code class='l-code-inline'>.form-help</code> as shown in example below.
+            </p>
+            <article class="l-demo">
+              <div class="l-demo_example">
+                <div class="l-demo_headbar"><span class="l-demo_headbar_title">Example:</span><a title="Show code" data-target="parent" data-parent-hop="3" class="js-toggle l-demo_headbar_control"><i class="icon icon-s">code</i></a>
+                </div>
+                <div class="row">
+                  <div class="col col-l-6 col-s-12">
+                    <div class="row form-row">
+                      <div class="form-label col">
+                        <label for="input-withhelp-01">Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="form-control">
+                          <input type="text" placeholder="Input" id="input-withhelp-01" class="input">
+                          <label class="form-help">Lorem ipsum Elit anim tempor aliquip tempor mollit.</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-l-6 col-s-12">
+                    <div class="row form-row">
+                      <div class="form-label col">
+                        <label for="textarea-withhelp-01">Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="form-control">
+                          <textarea placeholder="Textarea" id="textarea-withhelp-01" class="input"></textarea>
+                          <label class="form-help">Lorem ipsum Sit eu velit.</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-l-6 col-s-12">
+                    <div class="row form-row">
+                      <div class="form-label col">
+                        <label>Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="checkbox">
+                          <input type="checkbox" id="checkbox-withhelp" name="checkbox-withhelp" class="checkbox-input">
+                          <label for="checkbox-withhelp" class="checkbox-custom"></label>
+                          <label for="checkbox-withhelp" class="checkbox-label">Checkbox</label>
+                          <label class="form-help">Lorem ipsum Sit eu velit.</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-l-6 col-s-12">
+                    <div class="row form-row">
+                      <div class="form-label col">
+                        <label>Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="radio-group">
+                          <div class="radio">
+                            <input type="radio" id="radio-group-withhelp-01" name="radio-group-withhelp" class="radio-input">
+                            <label for="radio-group-withhelp-01" class="radio-custom"></label>
+                            <label for="radio-group-withhelp-01" class="radio-label">Radio 1</label>
+                          </div>
+                          <div class="radio">
+                            <input type="radio" id="radio-group-withhelp-02" name="radio-group-withhelp" class="radio-input">
+                            <label for="radio-group-withhelp-02" class="radio-custom"></label>
+                            <label for="radio-group-withhelp-02" class="radio-label">Radio 2</label>
+                          </div>
+                          <label class="form-help">Lorem ipsum Anim nisi et in dolor.</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-l-6 col-s-12">
+                    <div class="row form-row">
+                      <div class="form-label col">
+                        <label for="select-withhelp">Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="form-control">
+                          <select id="select-withhelp" class="js-select">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                            <option>Option 5</option>
+                            <option>Option 6</option>
+                          </select>
+                          <label class="form-help">Lorem ipsum Sed est culpa nulla sit laboris sed aliqua aute nostrud dolore consectetur dolor sed dolore dolore et dolor tempor laboris.</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="l-demo_code">
+                <div class="l-demo_headbar"><span class="l-demo_headbar_title">Code: </span></div>
+                <pre class="prettyprint"><code>&lt;!-- input with help --&gt;
+...
+  &lt;div class=&quot;form-controls col&quot;&gt;
+    &lt;div class=&quot;form-control&quot;&gt;
+      &lt;input placeholder=&quot;...&quot; id=&quot;...&quot; class=&quot;input&quot; type=&quot;text&quot;&gt;
+      &lt;label class=&quot;form-help&quot;&gt;Lorem ipsum Elit anim tempor aliquip tempor mollit.&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+...
+
+&lt;!-- textarea with help --&gt;
+...
+  &lt;div class=&quot;form-controls col&quot;&gt;
+    &lt;div class=&quot;form-control&quot;&gt;
+      &lt;textarea placeholder=&quot;...&quot; id=&quot;...&quot; class=&quot;input&quot;&gt;&lt;/textarea&gt;
+      &lt;label class=&quot;form-help&quot;&gt;Lorem ipsum Sit eu velit.&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+...
+
+&lt;!-- checkbox with help --&gt;
+...
+  &lt;div class=&quot;form-controls col&quot;&gt;
+    &lt;div class=&quot;checkbox&quot;&gt;
+      &lt;input id=&quot;...&quot; name=&quot;...&quot; class=&quot;checkbox-input&quot; type=&quot;checkbox&quot;&gt;
+      &lt;label for=&quot;...&quot; class=&quot;checkbox-custom&quot;&gt;&lt;/label&gt;
+      &lt;label for=&quot;...&quot; class=&quot;checkbox-label&quot;&gt;Checkbox&lt;/label&gt;
+      &lt;label class=&quot;form-help&quot;&gt;...&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+...
+
+&lt;!-- radio with help --&gt;
+...
+  &lt;div class=&quot;form-controls col&quot;&gt;
+    &lt;div class=&quot;radio-group&quot;&gt;
+      &lt;div class=&quot;radio&quot;&gt;
+        &lt;input id=&quot;...&quot; name=&quot;radio-group-withhelp&quot; class=&quot;radio-input&quot; type=&quot;radio&quot;&gt;
+        &lt;label for=&quot;...&quot; class=&quot;radio-custom&quot;&gt;&lt;/label&gt;
+        &lt;label for=&quot;...&quot; class=&quot;radio-label&quot;&gt;Radio 1&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;radio&quot;&gt;
+        ...
+      &lt;/div&gt;
+      &lt;label class=&quot;form-help&quot;&gt;Lorem ipsum Anim nisi et in dolor.&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+...
+
+&lt;!-- select with help --&gt;
+...
+  &lt;div class=&quot;form-controls col&quot;&gt;
+    &lt;div class=&quot;form-control&quot;&gt;
+      &lt;select style=&quot;display: none;&quot; id=&quot;...&quot; class=&quot;js-select&quot;&gt;
+        ...
+      &lt;/select&gt;
+      &lt;label class=&quot;form-help&quot;&gt;...&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+...</code></pre>
+              </div>
+            </article>
+            <hr class="l-hr-section"/>
+          </div>
+        </section>
+        <section id="error">
+          <div class="l-wrap-main">
+            <h2 class="l-h2">Form error
+            </h2>
+            <p class="l-p">In case you need to show additional error text for form components you can use form error component. Error text will be then shown under form component. To create form error component you can use <code class='l-code-inline'>&lt;label&gt;</code> tag with class <code class='l-code-inline'>.form-error</code> as shown in example below.
+            </p>
+            <article class="l-demo">
+              <div class="l-demo_example">
+                <div class="l-demo_headbar"><span class="l-demo_headbar_title">Example:</span><a title="Show code" data-target="parent" data-parent-hop="3" class="js-toggle l-demo_headbar_control"><i class="icon icon-s">code</i></a>
+                </div>
+                <div class="row">
+                  <div class="col col-l-6 col-s-12">
+                    <div class="row form-row">
+                      <div class="form-label col error">
+                        <label for="input-withhelp-01">Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="form-control">
+                          <input type="text" placeholder="Input" id="input-withhelp-01" class="input error">
+                          <label class="form-error">Lorem ipsum Elit anim tempor aliquip tempor mollit.</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-l-6 col-s-12">
+                    <div class="row form-row">
+                      <div class="form-label col error">
+                        <label for="textarea-withhelp-01">Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="form-control">
+                          <textarea placeholder="Textarea" id="textarea-withhelp-01" class="input error"></textarea>
+                          <label class="form-error">Lorem ipsum Sit eu velit.</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-l-6 col-s-12">
+                    <div class="row form-row">
+                      <div class="form-label col error">
+                        <label>Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="checkbox">
+                          <input type="checkbox" id="checkbox-withhelp" name="checkbox-withhelp" class="checkbox-input error">
+                          <label for="checkbox-withhelp" class="checkbox-custom"></label>
+                          <label for="checkbox-withhelp" class="checkbox-label">Checkbox</label>
+                          <label class="form-error">Lorem ipsum Sit eu velit.</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-l-6 col-s-12">
+                    <div class="row form-row">
+                      <div class="form-label col error">
+                        <label>Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="radio-group">
+                          <div class="radio">
+                            <input type="radio" id="radio-group-withhelp-01" name="radio-group-withhelp" class="radio-input error">
+                            <label for="radio-group-withhelp-01" class="radio-custom"></label>
+                            <label for="radio-group-withhelp-01" class="radio-label">Radio 1</label>
+                          </div>
+                          <div class="radio">
+                            <input type="radio" id="radio-group-withhelp-02" name="radio-group-withhelp" class="radio-input error">
+                            <label for="radio-group-withhelp-02" class="radio-custom"></label>
+                            <label for="radio-group-withhelp-02" class="radio-label">Radio 2</label>
+                          </div>
+                          <label class="form-error">Lorem ipsum Anim nisi et in dolor.</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-l-6 col-s-12">
+                    <div class="row form-row">
+                      <div class="form-label col error">
+                        <label for="select-withhelp">Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="form-control">
+                          <select id="select-withhelp" class="error js-select">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                            <option>Option 5</option>
+                            <option>Option 6</option>
+                          </select>
+                          <label class="form-error">Lorem ipsum Sed est culpa nulla sit laboris sed aliqua aute nostrud dolore consectetur dolor sed dolore dolore et dolor tempor laboris.</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="l-demo_code">
+                <div class="l-demo_headbar"><span class="l-demo_headbar_title">Code: </span></div>
+                <pre class="prettyprint"><code>&lt;!-- input with error --&gt;
+...
+  &lt;div class=&quot;form-controls col&quot;&gt;
+    &lt;div class=&quot;form-control&quot;&gt;
+      &lt;input placeholder=&quot;...&quot; id=&quot;...&quot; class=&quot;input error&quot; type=&quot;text&quot;&gt;
+      &lt;label class=&quot;form-error&quot;&gt;Lorem ipsum Elit anim tempor aliquip tempor mollit.&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+...
+
+&lt;!-- textarea with error --&gt;
+...
+  &lt;div class=&quot;form-controls col&quot;&gt;
+    &lt;div class=&quot;form-control&quot;&gt;
+      &lt;textarea placeholder=&quot;...&quot; id=&quot;...&quot; class=&quot;input error&quot;&gt;&lt;/textarea&gt;
+      &lt;label class=&quot;form-error&quot;&gt;Lorem ipsum Sit eu velit.&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+...
+
+&lt;!-- checkbox with error --&gt;
+...
+  &lt;div class=&quot;form-controls col&quot;&gt;
+    &lt;div class=&quot;checkbox&quot;&gt;
+      &lt;input id=&quot;...&quot; name=&quot;...&quot; class=&quot;checkbox-input error&quot; type=&quot;checkbox&quot;&gt;
+      &lt;label for=&quot;...&quot; class=&quot;checkbox-custom&quot;&gt;&lt;/label&gt;
+      &lt;label for=&quot;...&quot; class=&quot;checkbox-label&quot;&gt;Checkbox&lt;/label&gt;
+      &lt;label class=&quot;form-error&quot;&gt;...&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+...
+
+&lt;!-- radio with error --&gt;
+...
+  &lt;div class=&quot;form-controls col&quot;&gt;
+    &lt;div class=&quot;radio-group&quot;&gt;
+      &lt;div class=&quot;radio&quot;&gt;
+        &lt;input id=&quot;...&quot; name=&quot;radio-group-withhelp&quot; class=&quot;radio-input error&quot; type=&quot;radio&quot;&gt;
+        &lt;label for=&quot;...&quot; class=&quot;radio-custom&quot;&gt;&lt;/label&gt;
+        &lt;label for=&quot;...&quot; class=&quot;radio-label&quot;&gt;Radio 1&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;radio&quot;&gt;
+        ...
+      &lt;/div&gt;
+      &lt;label class=&quot;form-error&quot;&gt;Lorem ipsum Anim nisi et in dolor.&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+...
+
+&lt;!-- select with error --&gt;
+...
+  &lt;div class=&quot;form-controls col&quot;&gt;
+    &lt;div class=&quot;form-control&quot;&gt;
+      &lt;select style=&quot;display: none;&quot; id=&quot;...&quot; class=&quot;error js-select&quot;&gt;
+        ...
+      &lt;/select&gt;
+      &lt;label class=&quot;form-error&quot;&gt;...&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+...</code></pre>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </article>
+    <aside class="l-wrap-navs">
+      <!-- navigation main-->
+      <nav data-role="dropdown" class="l-nav-main"><a href="/" class="l-nav-main_headline">Zvara - Styleguide</a>
+        <ul data-role="sidebar" class="l-nav-main_list js-scrollbar"> 
+          <li class="l-nav-main_list_item"><a data-target="next" class="l-nav-main_link js-toggle">Introduction<i class="icon">caretright</i></a>
+            <ul class="l-nav-main_list-sub">
+              <li class="l-nav-main_list-sub_item"><a href="index.html" class="l-nav-main-sub_link">Get started</a>
+              </li>
+            </ul>
+          </li>
+          <li class="l-nav-main_list_item"><a data-target="next" class="l-nav-main_link js-toggle">Design<i class="icon">caretright</i></a>
+            <ul class="l-nav-main_list-sub">
+              <li class="l-nav-main_list-sub_item"><a href="color-palette.html" class="l-nav-main-sub_link">Color Palette</a>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a href="typography.html" class="l-nav-main-sub_link">Typography</a>
+              </li>
+            </ul>
+          </li>
+          <li class="l-nav-main_list_item"><a data-target="next" class="l-nav-main_link js-toggle active selected">Components<i class="icon">caretright</i></a>
+            <ul class="l-nav-main_list-sub active">
+              <li class="l-nav-main_list-sub_item"><a href="icons.html" class="l-nav-main-sub_link">Icons / Images / Badges</a>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a href="grid.html" class="l-nav-main-sub_link">Grid</a>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a href="buttons.html" class="l-nav-main-sub_link">Buttons</a>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a data-target="next" class="l-nav-main-sub_link js-toggle active selected">Form components<i class="icon js-icon">add</i></a>
+                <ul class="l-nav-main_list-sub2 active">
+                  <li class="l-nav-main_list-sub2_item"><a href="forms-basic.html" class="l-nav-main-sub2_link">- Basic</a></li>
+                  <li class="l-nav-main_list-sub2_item"><a href="forms-labels.html" class="l-nav-main-sub2_link selected">- Labels</a></li>
+                  <li class="l-nav-main_list-sub2_item"><a href="forms-layouts.html" class="l-nav-main-sub2_link">- Layouts</a></li>
+                </ul>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a href="tables.html" class="l-nav-main-sub_link">Tables</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- end: navigation main-->
+    </aside>
+    <!-- end: content main  -->
+  </div>
+  <!-- end: offcanvas-->
+  <script src="/scripts/vendor-light-6c32947f58.min.js"></script>
+  <script src="/scripts/light-30e091b4dc.min.js"></script>
+  <script src="/scripts/plugins-light-33be68977d.min.js"></script>
+  <script src="/scripts/main-light-5f3789ed70.min.js"></script>
+</body></html>

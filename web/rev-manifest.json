@@ -1,0 +1,12 @@
+{
+  "scripts/light.min.js": "scripts/light-30e091b4dc.min.js",
+  "scripts/main-light.min.js": "scripts/main-light-5f3789ed70.min.js",
+  "scripts/main.min.js": "scripts/main-632b5e6d3e.min.js",
+  "scripts/modernizr.min.js": "scripts/modernizr-d3bfcf1626.min.js",
+  "scripts/plugins-light.min.js": "scripts/plugins-light-33be68977d.min.js",
+  "scripts/plugins.min.js": "scripts/plugins-0fb5c3e421.min.js",
+  "scripts/vendor-light.min.js": "scripts/vendor-light-6c32947f58.min.js",
+  "scripts/vendor.min.js": "scripts/vendor-16d4bd2210.min.js",
+  "styles/main-light.min.css": "styles/main-light-c9208cda61.min.css",
+  "styles/main.min.css": "styles/main-79d6d22357.min.css"
+}

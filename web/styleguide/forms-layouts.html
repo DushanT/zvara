@@ -1,0 +1,366 @@
+<!DOCTYPE html><!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10 ie9"> <![endif]-->
+<!--[if gt IE 9]>      <html class="no-js gt-ie9"> <![endif]-->
+<!--[if !IE] <![IGNORE[--><!--[IGNORE[]]--> <html class="no-js noie">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Zvara - Styleguide</title>
+  <meta name="author" content="Lighting Beetle s.r.o.">
+  <meta name="description" content="Light is SCSS/Jade foundation for living styleguides">
+  <meta name="keywords" content="Living Styleguide, Styleguide, SCSS, Jade">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <meta name="theme-color" content="#8e8e8e">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/fonts/libertation-serif/fonts.css">
+  <link rel="stylesheet" href="/fonticons/icomoon/style.css"><link rel="stylesheet" href="/styles/main-light-c9208cda61.min.css">
+  <script src="/scripts/modernizr-d3bfcf1626.min.js"></script>
+</head>
+<body data-spy="scroll" data-target=".js-scrollspy" data-offset='150' id="top">
+  <!-- offcanvas-->
+  <div data-role="offcanvas" class="l-offcanvas">
+    <!-- content main-->
+    <article id="top" class="l-content-main">
+      <!-- header-->
+      <header class="l-header-main"> 
+        <div class="l-header-main_controls"><a data-target="body" class="l-toggle-menu js-toggle"><span class="l-toggle-menu_line"></span><span class="l-toggle-menu_line"></span><span class="l-toggle-menu_line"></span></a></div>
+        <div class="l-wrap-main">
+          <h1 class="js-header"> <a href="#top" data-smoothscroll="#top">Layouts</a></h1>
+          <div id="header-navigation" class="js-scrollspy l-headnav">
+            <ul class="l-headnav_list nav">
+              <li class="l-headnav_item"><a href="#main-info" data-smoothscroll="#main-info" data-toggle-target="#header-navigation" data-toggle="dropdown" class="l-headnav_link js-toggle">Main info</a></li>
+              <li style="" class="l-headnav_item"><a href="#layouts" data-smoothscroll="#layouts" data-toggle-target="#header-navigation" data-toggle="dropdown" class="l-headnav_link js-toggle">Form layouts</a></li>
+              <li style="" class="l-headnav_item"><a href="#vertical" data-smoothscroll="#vertical" data-toggle-target="#header-navigation" data-toggle="dropdown" class="l-headnav_link js-toggle">Vertical</a></li>
+              <li style="" class="l-headnav_item"><a href="#multicolumn" data-smoothscroll="#multicolumn" data-toggle-target="#header-navigation" data-toggle="dropdown" class="l-headnav_link js-toggle">Multicolumn</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="l-content-main_inner">
+        <section id="main-info" class="l-main-info">
+          <div class="l-wrap-main">
+            <p class="l-big">Documentation of possible form layouts including vertical, multicolumn and inline layout.
+            </p>
+            <div class="l-box-desc">
+              <p class="l-box-desc_headline">Files</p><code class="l-code">app/styles/modules/_forms.scss</code><br/>
+            </div>
+          </div>
+        </section>
+        <aside class="l-nav-contents js-scrollspy">
+          <p class="l-nav-contents_headline">Contents</p>
+          <ul class="l-nav-contents_list nav">
+            <li style="" class="l-nav-contents_item"><a href="#layouts" data-smoothscroll="#layouts" class="l-nav-contents_link">Form layouts</a></li>
+            <li style="" class="l-nav-contents_item"><a href="#vertical" data-smoothscroll="#vertical" class="l-nav-contents_link">Vertical</a></li>
+            <li style="" class="l-nav-contents_item"><a href="#multicolumn" data-smoothscroll="#multicolumn" class="l-nav-contents_link">Multicolumn</a></li>
+          </ul>
+        </aside>
+        <section id="layouts">
+          <div class="l-wrap-main">
+            <h2 class="l-h2">Form layouts
+            </h2>
+            <p class="l-p">Form layouts consists of containers as <code class='l-code-inline'>.form-row</code>, <code class='l-code-inline'>.form-label</code>, <code class='l-code-inline'>.form-controls</code> and <code class='l-code-inline'>.from-control</code>. 
+            </p>
+            <p class="l-p">The main container <code class='l-code-inline'>.form-row</code> have two children containers <code class='l-code-inline'>.form-label</code> and <code class='l-code-inline'>.form-controls</code>. The <code class='l-code-inline'>.form-label</code> contains basic label for form controls. The <code class='l-code-inline'>.form-controls</code> container can contains one or more <code class='l-code-inline'>.form-control</code> containers.
+            </p>
+            <div class="l-box-desc l-box-note">
+              <p class="l-box-desc_headline">Note</p>
+              <p class="l-p">Layouts are using same classes as <a href='grid.html' class='l-a'>grid</a> to represent row (<code class='l-code-inline'>.form-row</code>) and columns (<code class='l-code-inline'>.form-label</code>, <code class='l-code-inline'>.form-controls</code>). Thus width of elements containers can be set the same way as grid.
+              </p>
+            </div>
+            <hr class="l-hr-section"/>
+          </div>
+        </section>
+        <section id="vertical">
+          <div class="l-wrap-main">
+            <h2 class="l-h2">Vertical
+            </h2>
+            <p class="l-p">Vertical layout is the most basic form layout and can be created by following principles shown in example below. In case you need more form components for one form label, you can use vertical block layout. This layout can be created by using additional class <code class='l-code-inline'>.form-controls-block</code> on <code class='l-code-inline'>.form-controls</code> element.
+            </p>
+            <article class="l-demo">
+              <div class="l-demo_example">
+                <div class="l-demo_headbar"><span class="l-demo_headbar_title">Example:</span><a title="Show code" data-target="parent" data-parent-hop="3" class="js-toggle l-demo_headbar_control"><i class="icon icon-s">code</i></a>
+                </div>
+                <div class="row">
+                  <div class="col col-l-6 col-s-12">
+                    <h4>Vertical layout</h4>
+                    <div class="row form-row">
+                      <div class="form-label col">
+                        <label for="input-01">Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="form-control">
+                          <input type="text" placeholder="Input" id="input-vl-01" class="input">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row form-row">
+                      <div class="form-label col">
+                        <label for="input-01">Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="form-control">
+                          <textarea type="text" placeholder="Textarea" id="textarea-vl-01" class="input"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row form-row">
+                      <div class="form-label col">
+                        <label for="input-01">Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="checkbox">
+                          <input type="checkbox" id="checkbox-vl" name="checkbox-vl" class="checkbox-input">
+                          <label for="checkbox-vl" class="checkbox-custom"></label>
+                          <label for="checkbox-vl" class="checkbox-label">Checkbox</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-l-6 col-s-12">
+                    <h4>Vertical block layout</h4>
+                    <div class="row form-row">
+                      <div class="form-label col">
+                        <label for="input-01">Form label:</label>
+                      </div>
+                      <div class="form-controls form-controls-block col">
+                        <div class="form-control">
+                          <input type="text" placeholder="Input" id="input-vbl-01" class="input">
+                        </div>
+                        <div class="form-control">
+                          <textarea type="text" placeholder="Textarea" id="textarea-vbl-01" class="input"></textarea>
+                        </div>
+                        <div class="checkbox">
+                          <input type="checkbox" id="checkbox-vbl" name="checkbox-vbl" class="checkbox-input">
+                          <label for="checkbox-vbl" class="checkbox-custom"></label>
+                          <label for="checkbox-vbl" class="checkbox-label">Checkbox</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="l-demo_code">
+                <div class="l-demo_headbar"><span class="l-demo_headbar_title">Code: </span></div>
+                <pre class="prettyprint"><code>&lt;!-- vertical layout --&gt;
+&lt;div class=&quot;row form-row&quot;&gt;
+  &lt;div class=&quot;form-label col&quot;&gt;
+    &lt;label for=&quot;...&quot;&gt;...&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-controls col&quot;&gt;
+    &lt;div class=&quot;form-control&quot;&gt;
+      &lt;input placeholder=&quot;...&quot; id=&quot;...&quot; class=&quot;input&quot; type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row form-row&quot;&gt;
+  &lt;div class=&quot;form-label col&quot;&gt; ... &lt;/div&gt;
+  &lt;div class=&quot;form-controls col&quot;&gt; ... &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row form-row&quot;&gt;
+  &lt;div class=&quot;form-label col&quot;&gt; ... &lt;/div&gt;
+  &lt;div class=&quot;form-controls col&quot;&gt; ... &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- vertical block layout --&gt;
+&lt;div class=&quot;row form-row&quot;&gt;
+  &lt;div class=&quot;form-label col&quot;&gt;
+    &lt;label for=&quot;...&quot;&gt;Form label:&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-controls form-controls-block col&quot;&gt;
+    &lt;div class=&quot;form-control&quot;&gt;
+      &lt;input placeholder=&quot;...&quot; id=&quot;...&quot; class=&quot;input&quot; type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-control&quot;&gt;
+      ...
+    &lt;/div&gt;
+    &lt;div class=&quot;checkbox&quot;&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </article>
+            <hr class="l-hr-section"/>
+          </div>
+        </section>
+        <section id="multicolumn">
+          <div class="l-wrap-main">
+            <h2 class="l-h2">Multicolumn
+            </h2>
+            <p class="l-p">Multicolumn layout can be created easily by combining <a href='grid.html#grid12'>Grid 12</a> with form layout as shown in example below.
+            </p>
+            <article class="l-demo">
+              <div class="l-demo_example">
+                <div class="l-demo_headbar"><span class="l-demo_headbar_title">Example:</span><a title="Show code" data-target="parent" data-parent-hop="3" class="js-toggle l-demo_headbar_control"><i class="icon icon-s">code</i></a>
+                </div>
+                <div class="row">
+                  <div class="col col-l-3 col-m-5 col-s-6 col-xs-12">
+                    <div class="row form-row">
+                      <div class="form-label col">
+                        <label for="input-ml-01">Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="form-control">
+                          <input type="text" placeholder="Input" id="input-ml-01" class="input">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-l-1 col-m-2 col-s-6 col-xs-12">
+                    <div class="row form-row">
+                      <div class="form-label col">
+                        <label for="input-ml-03">Label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="form-control">
+                          <input type="text" placeholder="Input" id="input-ml-02" class="input">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-l-3 col-m-5 col-s-12 col-xs-12">
+                    <div class="row form-row">
+                      <div class="form-label col">
+                        <label for="input-ml-01">Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="form-control">
+                          <input type="text" placeholder="Input" id="input-ml-03" class="input">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-l-2 col-m-6 col-xs-12">
+                    <div class="row form-row">
+                      <div class="form-label col">
+                        <label for="input-ml-05">Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="form-control">
+                          <input type="text" placeholder="Input" id="input-ml-05" class="input">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-l-3 col-m-6 col-xs-12">
+                    <div class="row form-row">
+                      <div class="form-label col">
+                        <label for="select-ml-01">Form label:</label>
+                      </div>
+                      <div class="form-controls col">
+                        <div class="form-control">
+                          <select id="select-ml-01" class="js-select">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                            <option>Option 5</option>
+                            <option>Option 6</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="l-demo_code">
+                <div class="l-demo_headbar"><span class="l-demo_headbar_title">Code: </span></div>
+                <pre class="prettyprint"><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col col-l-3 col-m-5 col-s-6 col-xs-12&quot;&gt;
+    &lt;div class=&quot;row form-row&quot;&gt;
+      &lt;div class=&quot;form-label col&quot;&gt;
+        &lt;label for=&quot;...&quot;&gt;Form label:&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;form-controls col&quot;&gt;
+        &lt;div class=&quot;form-control&quot;&gt;
+          &lt;input placeholder=&quot;...&quot; id=&quot;...&quot; class=&quot;input&quot; type=&quot;text&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;col col-l-1 col-m-2 col-s-6 col-xs-12&quot;&gt;
+    &lt;div class=&quot;row form-row&quot;&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;col col-l-3 col-m-5 col-s-12 col-xs-12&quot;&gt;
+    &lt;div class=&quot;row form-row&quot;&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;col col-l-2 col-m-6 col-xs-12&quot;&gt;
+    &lt;div class=&quot;row form-row&quot;&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;col col-l-3 col-m-6 col-xs-12&quot;&gt;
+    &lt;div class=&quot;row form-row&quot;&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </article>
+    <aside class="l-wrap-navs">
+      <!-- navigation main-->
+      <nav data-role="dropdown" class="l-nav-main"><a href="/" class="l-nav-main_headline">Zvara - Styleguide</a>
+        <ul data-role="sidebar" class="l-nav-main_list js-scrollbar"> 
+          <li class="l-nav-main_list_item"><a data-target="next" class="l-nav-main_link js-toggle">Introduction<i class="icon">caretright</i></a>
+            <ul class="l-nav-main_list-sub">
+              <li class="l-nav-main_list-sub_item"><a href="index.html" class="l-nav-main-sub_link">Get started</a>
+              </li>
+            </ul>
+          </li>
+          <li class="l-nav-main_list_item"><a data-target="next" class="l-nav-main_link js-toggle">Design<i class="icon">caretright</i></a>
+            <ul class="l-nav-main_list-sub">
+              <li class="l-nav-main_list-sub_item"><a href="color-palette.html" class="l-nav-main-sub_link">Color Palette</a>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a href="typography.html" class="l-nav-main-sub_link">Typography</a>
+              </li>
+            </ul>
+          </li>
+          <li class="l-nav-main_list_item"><a data-target="next" class="l-nav-main_link js-toggle active selected">Components<i class="icon">caretright</i></a>
+            <ul class="l-nav-main_list-sub active">
+              <li class="l-nav-main_list-sub_item"><a href="icons.html" class="l-nav-main-sub_link">Icons / Images / Badges</a>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a href="grid.html" class="l-nav-main-sub_link">Grid</a>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a href="buttons.html" class="l-nav-main-sub_link">Buttons</a>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a data-target="next" class="l-nav-main-sub_link js-toggle active selected">Form components<i class="icon js-icon">add</i></a>
+                <ul class="l-nav-main_list-sub2 active">
+                  <li class="l-nav-main_list-sub2_item"><a href="forms-basic.html" class="l-nav-main-sub2_link">- Basic</a></li>
+                  <li class="l-nav-main_list-sub2_item"><a href="forms-labels.html" class="l-nav-main-sub2_link">- Labels</a></li>
+                  <li class="l-nav-main_list-sub2_item"><a href="forms-layouts.html" class="l-nav-main-sub2_link selected">- Layouts</a></li>
+                </ul>
+              </li>
+              <li class="l-nav-main_list-sub_item"><a href="tables.html" class="l-nav-main-sub_link">Tables</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- end: navigation main-->
+    </aside>
+    <!-- end: content main  -->
+  </div>
+  <!-- end: offcanvas-->
+  <script src="/scripts/vendor-light-6c32947f58.min.js"></script>
+  <script src="/scripts/light-30e091b4dc.min.js"></script>
+  <script src="/scripts/plugins-light-33be68977d.min.js"></script>
+  <script src="/scripts/main-light-5f3789ed70.min.js"></script>
+</body></html>
